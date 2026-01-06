@@ -26,11 +26,11 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
    - Local Python 3 installation
       - Reasonably recent Python version (we tested with Python 3.13)
       - Development compilation headers: `python.h` 
-      - C compiler added to your PATH environment variable
+      - C compiler (added to your PATH environment variable)
 
 ### Pre-requisites for the group assignment
 - Check the list of [groups](https://github.com/UniDive/2026-UniDive-Yerevan-training-school#trainee-groups) and find the group to which you belong
-- Make sure that you have received an email (sent on 8 Jan 2026) from the organizers which
+- Make sure that you have received an email (sent after 6 Jan 2026) by the organizers which
    - puts you in contact with the **members of your group**,
    - links you to a **paper** on diversity quantification in NLP assigned to your group.
    - **Read the paper before coming** to Yerevan. Try to understand *why* diversity is important there, what *objects* are quantified for diversity, in which *processing stage* diversity is quantified and which diversity *measures* are used.
