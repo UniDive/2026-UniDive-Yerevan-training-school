@@ -39,13 +39,13 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
 
 ## Group work in Yerevan
 - In session 2 (Tuesday), the trainees will:
-   - work in **groups** to analyse their pre-requisite papers following a taxonomy introduced in session 1 (Tuesday)
+   - work in **groups** to analyse their pre-requisite papers following a taxonomy introduced in session 1
    - create a joint **presentation** (based on Google slides template that the trainers will prepare), with up to **5 slides** per group
    - select a **reporter** of the group (preferably a young researcher)
 - Session 5 (Friday) will host the group presentations by the repoters: **5 minutes** per group + **2-minute** discussion
 
 ## Lab sessions
-In sessions 3 (Wednesday) and 4 (Thursday) the trainees will work individually to set up a pipeline for quantifying diversity of a dataset. 
+In sessions 3 (Wednesday) and 4 (Thursday) the trainees will work individually to set up a pipeline for quantifying diversity of various datasets. 
 **Python** code will be used. It will be provided in 3 alternative formats: 
 - Google Colab
 - Jupyter notebook file (`*.ipynb`)
