@@ -34,7 +34,7 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
 - Make sure that you have received an email (sent after 6 Jan 2026) by the organizers which
    - puts you in contact with the **members of your group**,
    - links you to a **paper** on diversity quantification in NLP assigned to your group.
-   - **Read the paper before coming** to Yerevan. Try to understand *why* diversity is important there, what *objects* are quantified for diversity, in which *processing stage* diversity is quantified and which diversity *measures* are used.
+- **Read the paper before coming** to Yerevan. Try to understand *why* diversity is important there, what *objects* are quantified for diversity, in which *processing stage* diversity is quantified and which diversity *measures* are used.
 - If possible, arrange an **online group meeting** prior to coming to Yerevan to discuss your understanding of the paper.
 
 ## Group work in Yerevan
