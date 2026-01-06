@@ -25,8 +25,8 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
    - Google account to work with Google Colab (recommended if not/weakly familiar with Python; requires no installations)
    - Local Python 3 installation
       - Reasonably recent Python version (we tested with Python 3.13)
-      - Development compilation headers: Python.h (works, but only do so if you have good knowledge of this)
-      - C compiler added to your PATH environment variable (required for a specific package to install correctly) 
+      - Development compilation headers: `python.h` 
+      - C compiler added to your PATH environment variable
 
 ### Pre-requisites for the group assignment
 - Check the list of [groups](https://github.com/UniDive/2026-UniDive-Yerevan-training-school#trainee-groups) and find the group to which you belong
