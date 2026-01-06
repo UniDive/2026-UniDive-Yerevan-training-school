@@ -1,4 +1,5 @@
-# Course 3: Diversity quantification in natural language processing: The why, what, where and how 
+# Diversity quantification in natural language processing: The why, what, where and how 
+This folder contains the material for course 3 of the [2nd UniDive Training School in Yerevan](https://unidive.lisn.upsaclay.fr/doku.php?id=meetings:other-events:2nd_unidive_training_school).
 
 ## Trainers
 - [Louis Estève](https://www.lisn.upsaclay.fr/membres/esteve-louis/) (Université Paris-Saclay, CNRS, France)
