@@ -13,6 +13,7 @@
 3. [Wednesday] Measuring in-text diversity (practical session, lab)
 4. [Thursday] Measuring metalinguistic diversity (practical session, lab)
 5. [Friday] Trainees' presentations of the outcomes from sessions 2 and 4 (group work)
+See also the [schedule](https://unidive.lisn.upsaclay.fr/doku.php?id=meetings:other-events:2nd_unidive_training_school#schedule) and the [course proposal](https://unidive.lisn.upsaclay.fr/lib/exe/fetch.php?media=meetings:other-events:2nd-training-school:esteve-et-al-diversity-quantification.pdf).
 
 ## Prerequisites for the trainees
 Before coming to Yerevan, make sure that you have met the following pre-requistites.
