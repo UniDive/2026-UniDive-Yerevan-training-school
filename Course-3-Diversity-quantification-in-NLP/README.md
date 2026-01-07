@@ -49,7 +49,11 @@ In sessions 3 (Wednesday) and 4 (Thursday) the trainees will work individually t
 **Python** code will be used. It will be provided in 3 alternative formats: 
 - Google Colab
 - Jupyter notebook file (`*.ipynb`)
-- strandard Python file (`*.py`)
+- standard Python file (`*.py`)
 
+The data used in labs include:
+- a subset of the [GUM corpus](https://gucorpling.org/gum/) (included in this repository) in English with 15 different genres of similar sizes, in the [CoNLL-U format](https://universaldependencies.org/format.html)
+
+ 
 
 
