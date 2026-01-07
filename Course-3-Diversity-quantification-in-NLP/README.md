@@ -28,6 +28,7 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
       - Reasonably recent Python version (we tested with Python 3.13)
       - Development compilation headers: `python.h` 
       - C compiler (added to your PATH environment variable)
+- Understand the [CoNLL-U file format](https://universaldependencies.org/format.html)
 
 ### Pre-requisites for the group assignment
 - Check the list of [groups](https://github.com/UniDive/2026-UniDive-Yerevan-training-school#trainee-groups) and find the group to which you belong
