@@ -56,8 +56,10 @@ The data used in labs include:
 - a [subset](GUM-subcorpus) of the [GUM corpus](https://gucorpling.org/gum/) (included in this repository) in English with 15 different genres of similar sizes, in the [CoNLL-U format](https://universaldependencies.org/format.html)
 
 ### Instructions for starting a lab session in Google colab
+- 
 - go to the folder of [session 3](https://github.com/UniDive/2026-UniDive-Yerevan-training-school/tree/main/Diversity-quantification-course/session-3-measuring-in-text-diversity-in-nlp) or [session 4](https://github.com/UniDive/2026-UniDive-Yerevan-training-school/tree/main/Diversity-quantification-course/session-4-measuring-meta-linguistic-diversity-in-nlp)
-- click on the file with the `.ipynb` extension, programmers' or non-programmers' version, depending on your profile; when the file opens, download it (with the download icon in the upper right-hand corner)
+- click on the file with the `.ipynb` extension, programmers' or non-programmers' version, depending on your profile; - if you are autonomous in Python programming, select the programmers' version, otherwise, select the non-programmers' version
+- when the file opens, download it (with the download icon in the upper right-hand corner)
 - open [Google Colab](https://colab.google/), click on `Open Colab`, then `Upload`, select the file from your computer
 
 
