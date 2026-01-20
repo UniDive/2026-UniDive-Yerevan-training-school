@@ -41,7 +41,7 @@ Before coming to Yerevan, make sure that you have met the following pre-requisti
 ## Group work in Yerevan
 - In session 2 (Tuesday), the trainees will:
    - work in **groups** to analyse their pre-requisite papers following a taxonomy introduced in session 1
-   - create a joint **presentation** (based on Google slides template that the trainers will prepare), with up to **5 slides** per group
+   - create a joint **presentation** (based on Google slides template that the trainers will prepare), with up to **5 slides** per group, using this [shared document](https://docs.google.com/presentation/d/1CUBlTrpue8A_GkOJJ7oU7bIopkg_aRVwv7aUzX9Gyu4/edit?usp=sharing)
    - select a **reporter** of the group (preferably a young researcher)
 - Session 5 (Friday) will host the group presentations by the repoters: **5 minutes** per group + **2-minute** discussion
 
