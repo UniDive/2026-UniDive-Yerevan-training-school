@@ -60,6 +60,8 @@ The data used in labs include:
 - click on the file with the `.ipynb` extension, programmers' or non-programmers' version, depending on your profile; - if you are autonomous in Python programming, select the programmers' version, otherwise, select the non-programmers' version
 - when the file opens, download it (with the download icon in the upper right-hand corner)
 - open [Google Colab](https://colab.google/), click on `Open Colab`, then `Upload`, select the file from your computer
+- read through the instructions; when you come to a cell containing code (in Python), hower over it; a "play" icon appears in the upper left-hand corner; click on it to execute the code
+- 
 
 
  
