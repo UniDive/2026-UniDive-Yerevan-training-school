@@ -61,7 +61,7 @@ The data used in labs include:
 - when the file opens, download it (with the download icon in the upper right-hand corner)
 - open [Google Colab](https://colab.google/), click on `Open Colab`, then `Upload`, select the file from your computer
 - read through the instructions; when you come to a cell containing code (in Python), hower over it; a "play" icon appears in the upper left-hand corner; click on it to execute the code
-- 
+- the cells of code need to be run sequentially; don't miss any of them, otherwise errors (in red) might occur
 
 
  
