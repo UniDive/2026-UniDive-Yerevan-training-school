@@ -7,4 +7,4 @@ For parts of course 2 (LLMS for Low-Resourced Languages) and 3 (Diversity quanti
 Groups were designed so as to ensure diversity of members in terms of country of affiliation, gender, and career stage. See the [list of groups](Yerevan-winter-school-trainee-groups.pdf).
 
 ## Course on LLMs for low-resourced languages
-See the Github [[https://github.com/NinaKivanani/Tutorials_low-resource-llm|repository]] of the course
+See the Github [repository](https://github.com/NinaKivanani/Tutorials_low-resource-llm) of the course
