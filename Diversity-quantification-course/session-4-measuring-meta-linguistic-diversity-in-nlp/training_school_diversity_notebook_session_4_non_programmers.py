@@ -215,9 +215,7 @@ matrix_df
 Based on your intuition, what is the answer to this question? What did you base your answer on?
 
 To answer this question empirically we calculate each language's distance from all other languages and then aggregate those distances, using an average.
-See optional exercises at the bottom of this notebook for further working on this topic.
-
-In the next cell, we define the `distance_matrix`, which will be used afterwards to obtain submatrices of distances.
+To this end, we create the `distance_matrix` containing the distance between each pair of languages.
 """
 
 _langs = [[x] for x in LANGS]
