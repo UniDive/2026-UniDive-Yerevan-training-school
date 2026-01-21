@@ -376,9 +376,14 @@ def display():
 Use the function above several times to find the subset of 5 languages with as high disparity as possible.
 """
 
-# <STUDENT-TODO>
+my_languages = ("pol","ukr","slv","lit","ces")
+get_diversity_from_languages(my_languages)
 
+# <STUDENT-TODO>
+#Repeat with a different set of languages
 # </STUDENT-TODO>
+
+#Repeat the same
 
 display()
 
