@@ -282,7 +282,7 @@ matrix_df = pd.DataFrame(distance_submatrix, index=local_langs, columns=local_la
 matrix_df
 
 """## 5.2 Finding the disparity of a subset of languages
-The following code defines a function (called `get_diversity_from_languages`) which calculates the disparity of a subset of languages. Check that this function needs the function `get_submatrix_and_relevant_indices_for_languages`, which we defined and tested above.
+The following code defines a function (called `get_diversity_from_languages`) which calculates the disparity of a subset of languages. Check that this function needs the function `get_submatrix_and_relevant_indices_for_languages`, which we defined and tested above. Run the code.
 """
 
 ################################################################################
@@ -376,28 +376,8 @@ def display():
 Use the function above several times to find the subset of 5 languages with as high disparity as possible.
 """
 
-################################################################################
-
-# We now want to test various combinations of genres, and see which ones have
-# the highest diversity scores.
-#
-# Each time you call `get_diversity_for_genres` with a list of genres, it adds
-# the necessary data and resulting diversity scores into `result`, `x`, and `y`.
-#
-# You may then manually call for example
-#
-# get_diversity_from_languages(("fre", "eng"))
-# get_diversity_from_languages(("ita", "pol"))
-#
-# and then see the scores it gives, along with the plot.
-# In the lines above, the calls are hard-coded, but perhaps there could be more
-# convenient ways to test a wide array of possible language lists?
-# You may formulate multiple hypotheses and test them.
-
-
 # <STUDENT-TODO>
-get_diversity_from_languages(("hye", "eng", "fra", "ell", "ukr"))
-get_diversity_from_languages(("hye", "eng", "spa", "ell", "ukr"))
+
 # </STUDENT-TODO>
 
 display()
