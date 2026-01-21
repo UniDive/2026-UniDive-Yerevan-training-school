@@ -179,7 +179,7 @@ def dist_lang(a, b):
         __b.append(y)
     return sp.spatial.distance.cosine(__a, __b)
 
-"""Use the function `dist_lang` to measure the distance between Armenian and Greek."""
+"""Use the function `dist_lang` to measure the distance between Armenian and Greek. The 3-letter language codes must be given in double quotes."""
 
 # <STUDENT-TODO>
 # </STUDENT-TODO>
@@ -239,7 +239,7 @@ df_lang
 
 """# **Section 5. Maximally diverse language sets**
 
-Based on your intuition, which 5 languages from the dataset are most distant from each other?
+**Based on your intuition, which 5 languages from the dataset are most distant from each other?**
 
 ## 5.1 Obtaining a submatrix of distances
 
@@ -267,41 +267,23 @@ def get_submatrix_and_relevant_indices_for_languages(languages: List[str]) -> Tu
 
 """Earlier in this notebook, we told you to hypothesize about a subset of diverse languages.
 
-Call the function `get_submatrix_and_relevant_indices_for_languages` with the tuple of your selected languages. The first element of the resulting `tuple` will be the distance submatrix.
+Insert the codes of the 5 languages of your choice to the local_langs list.
+The function `get_submatrix_and_relevant_indices_for_languages` will use this list to construct a submatrix with the distances between only these 5  languages. (The function also constructs the list of the indices of these languages, called "relevant_indices" but this is of no interest for us here.)
+
+Run the code and understand the resulting submatrix.
 """
 
 # <STUDENT-TODO>
-
+local_langs = []
 # </STUDENT-TODO>
 
+distance_submatrix, relevant_indices = get_submatrix_and_relevant_indices_for_languages(local_langs)
 matrix_df = pd.DataFrame(distance_submatrix, index=local_langs, columns=local_langs)
 matrix_df
 
 """## 5.2 Finding the disparity of a subset of languages
-
-Experiment with different subsets, to find an optimal subset.
-This part will be like session 3 - they experiment with different subsets and plot them.
-
-<font color="red">📌 Run the following code cell to define the function `display` for plotting the diversity measures of the various genre combinations.</font>
+The following code defines a function (called `get_diversity_from_languages`) which calculates the disparity of a subset of languages. Check that this function needs the function `get_submatrix_and_relevant_indices_for_languages`, which we defined and tested above.
 """
-
-def display():
-  # Printing to the screen.
-
-  _result = sorted(result, key=lambda q: q[1])
-
-  #df_dict = {key: [] for key in ["disparity", "balance", "chao_et_al_alpha1"]}
-  df_dict = {key: [] for key in ["pairwise"]}
-  language_tuples = []
-  for z in _result:
-      pairwise = z[1]
-      df_dict["pairwise"].append(pairwise)
-      language_tuples.append(', '.join(z[0]))
-  df_display = pd.DataFrame(df_dict, index=language_tuples).sort_values("pairwise")
-
-  return df_display
-
-"""Complete the function `get_diversity_from_languages` below to calculate the disparity of a subset of languages."""
 
 ################################################################################
 
@@ -352,7 +334,6 @@ def get_diversity_from_languages(languages: Tuple[str]) -> Tuple[float]:
     # `print(dir(diversutils))` may help you know which methods are available,
     # and which to use.
 
-    # <STUDENT-TODO>
     graph: int = diversutils.create_empty_graph(0, 0) # (1)
 
     distance_submatrix, relevant_indices = get_submatrix_and_relevant_indices_for_languages(languages) # (2)
@@ -366,18 +347,33 @@ def get_diversity_from_languages(languages: Tuple[str]) -> Tuple[float]:
 
     disparity: float = diversutils.individual_measure(graph, diversutils.DF_DISPARITY_PAIRWISE)[0] # (6)
     diversutils.free_graph(graph) # (7)
-    # </STUDENT-TODO>
 
-    result.append((sorted(languages), diversity))
+    result.append((sorted(languages), [disparity]))
 
     return disparity
 
 ################################################################################
 
-get_diversity_from_languages(("hye", "eng", "fra", "ell", "pol"))
+"""<font color="red">📌 Run also the following code to define the function "display" for displaying the diversity scores of various combinations of categories.</font>"""
 
-"""## 5.3 Finding the disparity of a subset of languages
-Use the function above to find the subset of 5 lanaguges with the highest disparity.
+def display():
+  # Printing to the screen.
+
+  _result = sorted(result, key=lambda q: q[1])
+
+  #df_dict = {key: [] for key in ["disparity", "balance", "chao_et_al_alpha1"]}
+  df_dict = {key: [] for key in ["pairwise"]}
+  language_tuples = []
+  for z in _result:
+      pairwise = z[1]
+      df_dict["pairwise"].append(pairwise)
+      language_tuples.append(', '.join(z[0]))
+  df_display = pd.DataFrame(df_dict, index=language_tuples).sort_values("pairwise")
+
+  return df_display
+
+"""## 5.3 Finding the most disparate subset of languages
+Use the function above several times to find the subset of 5 languages with as high disparity as possible.
 """
 
 ################################################################################
@@ -400,7 +396,8 @@ Use the function above to find the subset of 5 lanaguges with the highest dispar
 
 
 # <STUDENT-TODO>
-
+get_diversity_from_languages(("hye", "eng", "fra", "ell", "ukr"))
+get_diversity_from_languages(("hye", "eng", "spa", "ell", "ukr"))
 # </STUDENT-TODO>
 
 display()
@@ -411,31 +408,7 @@ Assignment 4 - wrap-up
 
 In this session, what were the elements and what were the categories?
 What type of diversity did we deal with here - in-text, meta-linguistic or processing?
-In this session, to which dimension of diversity (variety, balance, disparity) can we assign the measure manipulated here (i.e., aggregation of distances)?
+To which dimension of diversity (variety, balance, disparity) can we assign the measure manipulated here (i.e., aggregation of distances)?
 Would it make sense to talk in this context about variety and balance?
 In many NLP scenarios two properties of multi-lingual datasets are considered: language and size. What other dimension of diversity is then relevant?
-
-# Section 7. Optional exercises
-
-## 7.1 Choice of distance
-
-In Section 4, we used a cosine distance over features defined in the two input languages, but could you think of other ways of measuring the distance between languages?
-
-## 7.2 Aggregation
-
-In Section 4, we used distance averaging as an aggregation, for simplicity, but which method of aggregation would you use?
-
-The method that is used in this notebook is averaging, but analysis can show this approach has flaws, which we will not delve in.
-
-## 7.3 Disparity and balance
-
-In this notebook, we have studied pure disparity. What about studying both balance and disparity? Use the following code to define a random number of elements for each language, and look for a subset of languages with optimal disparity and balance..
 """
-
-TOTAL_NUM_ELEMENTS = 1_000_000
-
-np.random.seed(123456789)
-share = np.abs(np.random.random(len(LANGS)))
-share /= np.sum(share)
-
-NUM_ELEMENTS_PER_LANGUAGE = np.round(share * TOTAL_NUM_ELEMENTS).astype(np.uint64)
